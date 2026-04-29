@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Ecommerce Marketing Course</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <div class="logo">EcomAcademy</div>
+  <nav>
+    <a href="index.html">Trang chủ</a>
+    <a href="courses.html">Khoá học</a>
+    <a href="blog.html">Blog</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Trở thành Ecommerce Marketer chuyên nghiệp</h1>
+  <p>Học thực chiến – Áp dụng ngay – Tăng thu nhập</p>
+  <button onclick="scrollToForm()">Đăng ký ngay</button>
+</section>
+
+<!-- COURSE HIGHLIGHT -->
+<section class="courses">
+  <h2>Khoá học nổi bật</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://source.unsplash.com/400x300/?marketing">
+      <h3>Digital Marketing Foundation</h3>
+      <button onclick="scrollToForm()">Đăng ký</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/400x300/?ecommerce">
+      <h3>Ecommerce Foundation</h3>
+      <button onclick="scrollToForm()">Đăng ký</button>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why">
+  <h2>Tại sao chọn chúng tôi?</h2>
+  <p>Thực chiến – Mentor từ ngành – Case study thật</p>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="testimonial">
+  <h2>Học viên nói gì?</h2>
+  <p>"Khoá học giúp mình tăng lương từ 6tr lên 12tr chỉ sau 3 tháng"</p>
+</section>
+
+<!-- FORM -->
+<section id="form" class="form">
+  <h2>Đăng ký tư vấn</h2>
+  <input type="text" id="name" placeholder="Tên">
+  <input type="text" id="phone" placeholder="Số điện thoại">
+  <input type="email" id="email" placeholder="Email">
+  <button onclick="submitForm()">Gửi thông tin</button>
+  <p id="message"></p>
+</section>
+
+<!-- CHAT -->
+<div class="chat">
+  <a href="#">💬</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
