@@ -1,537 +1,346 @@
 <!doctype html>
-<html lang="vi">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <title>Khóa học Marketing Ecommerce | Đăng ký ngay</title>
-    <meta
-      name="description"
-      content="Học Marketing Ecommerce theo lộ trình thực chiến: từ nền tảng đến tối ưu ads, báo cáo đa kênh, tự động hóa và chiến lược chiến dịch."
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BuzzWords — Word Scramble Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <a class="skip-link" href="#main">Bỏ qua đến nội dung</a>
+    <a class="skip-link" href="#game" aria-label="Skip to game section">Skip to game</a>
 
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="index.html" aria-label="Trang chủ">
-          <span class="brand__mark" aria-hidden="true"></span>
-          <span class="brand__text">EcomGrowth</span>
+    <header class="site-header" id="top">
+      <div class="header-inner">
+        <a class="brand" href="#home" aria-label="BuzzWords home">
+          <img
+            src="images/logo.svg"
+            class="brand-logo"
+            alt="BuzzWords logo"
+            role="img"
+            aria-label="BuzzWords logo"
+          />
         </a>
 
         <button
-          class="nav-toggle"
-          id="nav-toggle"
+          class="hamburger"
+          id="hamburgerBtn"
           type="button"
-          aria-label="Mở menu"
-          aria-controls="site-nav"
+          aria-label="Open navigation menu"
+          aria-controls="mobileMenu"
           aria-expanded="false"
         >
-          <span aria-hidden="true"></span>
+          <span class="hamburger-lines" aria-hidden="true"></span>
         </button>
 
-        <nav class="site-nav" id="site-nav" aria-label="Điều hướng chính">
-          <a class="site-nav__link" href="index.html">Trang chủ</a>
-          <a class="site-nav__link" href="courses.html">Khóa học</a>
-          <a class="site-nav__link" href="blog.html">Blog</a>
-          <a class="site-nav__cta cta-scroll" href="#lead-form" data-scroll-target="lead-form">
-            Đăng ký ngay
+        <nav class="nav-links" id="mobileMenu" aria-label="Primary navigation">
+          <a class="nav-link" href="#home">Home</a>
+          <a class="nav-link" href="#how">How to Play</a>
+          <a class="nav-link" href="#leaderboard">Leaderboard</a>
+          <a class="btn btn-cta" href="#game" id="playNowNav" aria-label="Play now">
+            Play Now →
           </a>
         </nav>
       </div>
     </header>
 
-    <main id="main">
-      <section class="hero">
-        <div class="hero__bg" aria-hidden="true">
-          <span class="blob blob--a"></span>
-          <span class="blob blob--b"></span>
-          <span class="grid-overlay"></span>
-        </div>
+    <main>
+      <section class="hero" id="home" aria-label="BuzzWords hero section">
+        <img
+          src="images/hero-bg.svg"
+          class="hero-bg"
+          alt=""
+          role="presentation"
+          aria-hidden="true"
+        />
 
-        <div class="container hero__inner">
-          <div class="hero__copy reveal">
-            <div class="pill">
-              <span class="pill__dot" aria-hidden="true"></span>
-              Học thực chiến cho người mới vào nghề
-            </div>
-            <h1 class="hero__title">
-              Chuyển từ “chạy ads” sang <span class="grad-text">chiến lược tăng trưởng ecommerce</span>
-              trong 4–8 tuần
-            </h1>
-            <p class="hero__subtitle">
-              Bộ khóa học marketing ecommerce tập trung vào kỹ năng làm việc thực tế: lập kế hoạch đa kênh,
-              tối ưu hiệu suất, chuẩn hóa quy trình CS, và ứng dụng AI để tăng tốc.
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <h1 class="hero-title">Unscramble Your Way to the Top!</h1>
+            <p class="hero-subtitle">
+              Master Digital Marketing & E-commerce vocab — one scrambled word at a time.
             </p>
-
-            <div class="hero__actions">
-              <a class="btn btn-primary cta-scroll" href="#lead-form" data-scroll-target="lead-form">
-                Đăng ký ngay
+            <div class="hero-actions">
+              <a class="btn btn-cta btn-cta--big" href="#game" aria-label="Start playing">
+                Start Playing →
               </a>
-              <a class="btn btn-ghost" href="courses.html">Xem toàn bộ khóa học</a>
-            </div>
-
-            <div class="hero__meta">
-              <div class="stat">
-                <div class="stat__value">12</div>
-                <div class="stat__label">Khóa học nền tảng đến tối ưu</div>
-              </div>
-              <div class="stat">
-                <div class="stat__value">Thực hành</div>
-                <div class="stat__label">Case + checklist triển khai</div>
-              </div>
-              <div class="stat">
-                <div class="stat__value">Phù hợp</div>
-                <div class="stat__label">Intern/Fresher/Junior</div>
-              </div>
+              <a class="btn btn-ghost" href="#how" aria-label="How it works">
+                How It Works
+              </a>
             </div>
           </div>
 
-          <div class="hero__visual reveal" aria-label="Góc nhìn nội dung khóa học">
-            <div class="visual-card">
-              <div class="visual-card__header">
-                <span class="tag">Lộ trình</span>
-                <span class="tag tag--ghost">Ecommerce Marketing</span>
-              </div>
-              <div class="visual-card__body">
-                <h2 class="visual-card__title">Bạn sẽ làm được gì?</h2>
-                <ul class="checklist">
-                  <li>
-                    <span class="check" aria-hidden="true"></span>
-                    Xây tracking và đọc số liệu đúng để tối ưu ads
-                  </li>
-                  <li>
-                    <span class="check" aria-hidden="true"></span>
-                    Lập kế hoạch multi-channel với mục tiêu rõ ràng
-                  </li>
-                  <li>
-                    <span class="check" aria-hidden="true"></span>
-                    Tối ưu ngân sách theo ngữ cảnh & phân khúc khách
-                  </li>
-                  <li>
-                    <span class="check" aria-hidden="true"></span>
-                    Dùng AI để tạo nội dung/biến thể & tăng tốc thử nghiệm
-                  </li>
-                </ul>
-              </div>
-              <div class="visual-card__foot">
-                <div class="mini-kpi">
-                  <div class="mini-kpi__label">Tập trung kỹ năng</div>
-                  <div class="mini-kpi__value">Từ “cảm tính” → “có số”</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="floating-badges" aria-hidden="true">
-              <span class="badge badge--a">Ads</span>
-              <span class="badge badge--b">Reporting</span>
-              <span class="badge badge--c">Automation</span>
-              <span class="badge badge--d">AI Assist</span>
-            </div>
-          </div>
+          <img
+            src="images/fruit-orange.svg"
+            class="float-anim float-orange"
+            alt="Decorative orange slice"
+            role="img"
+            aria-label="Decorative orange slice"
+          />
+          <img
+            src="images/fruit-kiwi.svg"
+            class="float-anim float-kiwi"
+            alt="Decorative kiwi slice"
+            role="img"
+            aria-label="Decorative kiwi slice"
+          />
+          <img
+            src="images/fruit-berry.svg"
+            class="float-anim float-berry"
+            alt="Decorative berry cluster"
+            role="img"
+            aria-label="Decorative berry cluster"
+          />
+          <img
+            src="images/fruit-lemon.svg"
+            class="float-anim float-lemon"
+            alt="Decorative lemon"
+            role="img"
+            aria-label="Decorative lemon"
+          />
         </div>
       </section>
 
-      <section class="section">
+      <section class="how" id="how" aria-label="How to play">
         <div class="container">
-          <div class="section-head reveal">
-            <h2 class="section-title">Course highlights</h2>
-            <p class="section-subtitle">
-              Chọn lộ trình phù hợp với bạn: từ nền tảng đến tối ưu hiệu suất & đa kênh.
-            </p>
-          </div>
-
-          <div class="grid grid--3 highlights">
-            <article class="course-card reveal">
-              <div class="course-card__media">
-                <img
-                  src="https://images.unsplash.com/photo-1557862921-7b7c8d1f4b5b?auto=format&fit=crop&w=1200&q=80"
-                  alt="Ảnh minh họa nền tảng digital marketing"
-                  loading="lazy"
-                />
-                <span class="course-card__glow" aria-hidden="true"></span>
-              </div>
-              <div class="course-card__content">
-                <h3 class="course-card__title">Digital Marketing Foundation</h3>
-                <p class="course-card__desc">
-                  Hiểu rõ phễu, kênh và mục tiêu. Có nền tảng để đọc số liệu và ra quyết định.
-                </p>
-                <a class="btn btn-primary btn-sm cta-scroll" href="#lead-form" data-scroll-target="lead-form">
-                  Đăng ký ngay
-                </a>
-              </div>
+          <h2 class="section-title">How to Play 🎮</h2>
+          <div class="how-grid">
+            <article class="how-card">
+              <div class="how-icon" aria-hidden="true">🔀</div>
+              <h3 class="how-title">See the scrambled word</h3>
+              <p class="how-desc">Your goal: decode the marketing & commerce term in a snap.</p>
             </article>
-
-            <article class="course-card reveal">
-              <div class="course-card__media">
-                <img
-                  src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=80"
-                  alt="Ảnh minh họa ecommerce"
-                  loading="lazy"
-                />
-                <span class="course-card__glow" aria-hidden="true"></span>
-              </div>
-              <div class="course-card__content">
-                <h3 class="course-card__title">Ecommerce Foundation</h3>
-                <p class="course-card__desc">
-                  Nắm cách vận hành ecommerce với trọng tâm: khách hàng, vòng lặp mua lại, và tối ưu funnel.
-                </p>
-                <a class="btn btn-primary btn-sm cta-scroll" href="#lead-form" data-scroll-target="lead-form">
-                  Đăng ký ngay
-                </a>
-              </div>
+            <article class="how-card">
+              <div class="how-icon" aria-hidden="true">💡</div>
+              <h3 class="how-title">Use hints if you&apos;re stuck</h3>
+              <p class="how-desc">Hints are your shortcut. Use them wisely to protect your points.</p>
             </article>
-
-            <article class="course-card reveal">
-              <div class="course-card__media">
-                <img
-                  src="https://images.unsplash.com/photo-1559056195-3d3e6f2f2a8a?auto=format&fit=crop&w=1200&q=80"
-                  alt="Ảnh minh họa tối ưu quảng cáo"
-                  loading="lazy"
-                />
-                <span class="course-card__glow" aria-hidden="true"></span>
-              </div>
-              <div class="course-card__content">
-                <h3 class="course-card__title">Basic of Google Ads</h3>
-                <p class="course-card__desc">
-                  Từ cấu trúc tài khoản đến cách test, phân bổ ngân sách và tối ưu theo mục tiêu chuyển đổi.
-                </p>
-                <a class="btn btn-primary btn-sm cta-scroll" href="#lead-form" data-scroll-target="lead-form">
-                  Đăng ký ngay
-                </a>
-              </div>
-            </article>
-
-            <article class="course-card reveal">
-              <div class="course-card__media">
-                <img
-                  src="https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&w=1200&q=80"
-                  alt="Ảnh minh họa reporting"
-                  loading="lazy"
-                />
-                <span class="course-card__glow" aria-hidden="true"></span>
-              </div>
-              <div class="course-card__content">
-                <h3 class="course-card__title">Multi-channel Ads Planning & Reporting</h3>
-                <p class="course-card__desc">
-                  Lập kế hoạch theo mục tiêu, dựng dashboard báo cáo và tối ưu quyết định dựa trên dữ liệu.
-                </p>
-                <a class="btn btn-primary btn-sm cta-scroll" href="#lead-form" data-scroll-target="lead-form">
-                  Đăng ký ngay
-                </a>
-              </div>
-            </article>
-
-            <article class="course-card reveal">
-              <div class="course-card__media">
-                <img
-                  src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80"
-                  alt="Ảnh minh họa tự động hóa"
-                  loading="lazy"
-                />
-                <span class="course-card__glow" aria-hidden="true"></span>
-              </div>
-              <div class="course-card__content">
-                <h3 class="course-card__title">Automation Tool for Optimizing Ads</h3>
-                <p class="course-card__desc">
-                  Tạo hệ thống tối ưu: cảnh báo bất thường, quy tắc điều chỉnh và quy trình thử nghiệm có kiểm soát.
-                </p>
-                <a class="btn btn-primary btn-sm cta-scroll" href="#lead-form" data-scroll-target="lead-form">
-                  Đăng ký ngay
-                </a>
-              </div>
-            </article>
-
-            <article class="course-card reveal">
-              <div class="course-card__media">
-                <img
-                  src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1200&q=80"
-                  alt="Ảnh minh họa AI"
-                  loading="lazy"
-                />
-                <span class="course-card__glow" aria-hidden="true"></span>
-              </div>
-              <div class="course-card__content">
-                <h3 class="course-card__title">Basic AI Adoption for Ads</h3>
-                <p class="course-card__desc">
-                  Dùng AI như trợ lý: viết biến thể, gợi ý góc nội dung và cách đo lường để không “ảo tưởng”.
-                </p>
-                <a class="btn btn-primary btn-sm cta-scroll" href="#lead-form" data-scroll-target="lead-form">
-                  Đăng ký ngay
-                </a>
-              </div>
+            <article class="how-card">
+              <div class="how-icon" aria-hidden="true">🏆</div>
+              <h3 class="how-title">Score points &amp; build streaks</h3>
+              <p class="how-desc">Correct answers boost your streak. Keep going to climb the leaderboard.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section section--alt">
+      <section class="game-section" id="game" aria-label="Game section">
         <div class="container">
-          <div class="split">
-            <div class="split__left reveal">
-              <h2 class="section-title">Vì sao chọn chúng tôi?</h2>
-              <p class="section-subtitle">
-                Bạn không cần “học thêm cho nhiều”. Bạn cần “học để làm ngay”. Chương trình tập trung vào năng lực
-                ra quyết định và triển khai theo checklist.
-              </p>
-              <div class="feature-list">
-                <div class="feature">
-                  <div class="feature__icon" aria-hidden="true">⚡</div>
-                  <div>
-                    <h3 class="feature__title">Thực hành sớm</h3>
-                    <p class="feature__desc">Bài tập theo từng phiên giúp bạn hình thành thói quen tối ưu ads.</p>
-                  </div>
-                </div>
-                <div class="feature">
-                  <div class="feature__icon" aria-hidden="true">🧠</div>
-                  <div>
-                    <h3 class="feature__title">Tư duy dựa trên dữ liệu</h3>
-                    <p class="feature__desc">Học cách đọc số liệu để hiểu “vì sao” và “nên làm gì tiếp”.</p>
-                  </div>
-                </div>
-                <div class="feature">
-                  <div class="feature__icon" aria-hidden="true">🛠️</div>
-                  <div>
-                    <h3 class="feature__title">Quy trình rõ ràng</h3>
-                    <p class="feature__desc">Bạn nhận checklist và template báo cáo để áp dụng ngay cho dự án thật.</p>
-                  </div>
-                </div>
-              </div>
+          <div class="game-top-metrics" aria-label="Game metrics">
+            <div class="metric metric-score">
+              <div class="metric-label">Score</div>
+              <div class="metric-value" id="scoreValue">0</div>
+            </div>
+            <div class="metric metric-round">
+              <div class="metric-label">Round</div>
+              <div class="metric-value" id="roundValue">1/10</div>
+            </div>
+            <div class="metric metric-streak">
+              <div class="metric-label">Streak</div>
+              <div class="metric-value" id="streakValue">0</div>
+            </div>
+          </div>
+
+          <div class="progress-wrap" aria-label="Progress bar">
+            <div class="progress-track" aria-hidden="true">
+              <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="progress-sr" id="progressText" aria-live="polite">Round 1 of 10</div>
+          </div>
+
+          <div class="game-card" id="gameCard" aria-label="Word scramble card">
+            <div class="game-header-row">
+              <span class="category-badge" id="categoryBadge">#Digital Marketing</span>
             </div>
 
-            <div class="split__right reveal">
-              <div class="quote-card">
-                <div class="quote-card__top">
-                  <span class="quote-badge">Cam kết</span>
-                </div>
-                <p class="quote-card__text">
-                  Đầu ra của bạn là kỹ năng: biết lập kế hoạch, biết đo lường, biết tối ưu và biết giải thích với
-                  số liệu. Không hứa “vi diệu”, chỉ hứa cách làm.
-                </p>
-                <div class="quote-card__bottom">
-                  <div class="quote-person">
-                    <div class="avatar" aria-hidden="true"></div>
-                    <div>
-                      <div class="quote-person__name">Mentor Growth Team</div>
-                      <div class="quote-person__role">Performance & Ecommerce</div>
-                    </div>
-                  </div>
-                </div>
+            <div class="scramble-wrap">
+              <div class="scrambled-word" id="scrambledWord" aria-label="Scrambled word">—</div>
+            </div>
+
+            <div class="hint-area" aria-label="Hint area">
+              <div class="hint-label">💡 Hint</div>
+              <div class="hint-text" id="hintText" hidden></div>
+            </div>
+
+            <label class="sr-only" for="answerInput">Your answer</label>
+            <input
+              class="answer-input"
+              id="answerInput"
+              type="text"
+              inputmode="text"
+              autocomplete="off"
+              placeholder="Type your answer…"
+              aria-label="Your answer"
+            />
+
+            <div class="game-actions">
+              <button
+                class="btn btn-outline btn-hint"
+                id="hintBtn"
+                type="button"
+                aria-label="Show a hint"
+              >
+                Hint 💡
+              </button>
+              <button
+                class="btn btn-outline btn-skip"
+                id="skipBtn"
+                type="button"
+                aria-label="Skip this word"
+              >
+                Skip ⏭
+              </button>
+              <button
+                class="btn btn-submit"
+                id="submitBtn"
+                type="button"
+                aria-label="Submit your answer"
+              >
+                Submit ✅
+              </button>
+            </div>
+
+            <div class="feedback" id="feedback" aria-live="polite" aria-atomic="true"></div>
+          </div>
+
+          <div class="modal-overlay" id="gameOverModal" role="dialog" aria-modal="true" aria-label="Game over">
+            <div class="modal">
+              <div class="modal-header">
+                <div class="modal-title">Game Over 🍹</div>
+                <div class="modal-subtitle" id="gameOverSummary">—</div>
               </div>
 
-              <div class="mini-formula">
-                <div class="mini-formula__title">Công thức học nhanh</div>
-                <div class="mini-formula__grid">
-                  <div class="mini-step">
-                    <div class="mini-step__num">01</div>
-                    <div class="mini-step__text">Hiểu cấu trúc</div>
+              <div class="modal-body">
+                <div class="score-breakdown">
+                  <div class="breakdown-row">
+                    <div class="breakdown-label">Your score</div>
+                    <div class="breakdown-value" id="finalScore">0</div>
                   </div>
-                  <div class="mini-step">
-                    <div class="mini-step__num">02</div>
-                    <div class="mini-step__text">Làm bài tập</div>
-                  </div>
-                  <div class="mini-step">
-                    <div class="mini-step__num">03</div>
-                    <div class="mini-step__text">Tối ưu theo số</div>
+                  <div class="breakdown-row">
+                    <div class="breakdown-label">Correct</div>
+                    <div class="breakdown-value" id="finalCorrect">0/0</div>
                   </div>
                 </div>
-                <a class="btn btn-primary cta-scroll" href="#lead-form" data-scroll-target="lead-form">
-                  Đăng ký ngay
-                </a>
+
+                <div class="name-entry" aria-label="Leaderboard name entry">
+                  <label for="playerName" class="name-label">Enter your name</label>
+                  <input
+                    id="playerName"
+                    class="name-input"
+                    type="text"
+                    maxlength="20"
+                    placeholder="e.g. Thao"
+                    aria-label="Enter your name for the leaderboard"
+                  />
+                  <div class="modal-actions">
+                    <button class="btn btn-submit" id="saveScoreBtn" type="button" aria-label="Save score">
+                      Save Score 🥇
+                    </button>
+                    <button class="btn btn-ghost" id="playAgainBtn" type="button" aria-label="Play again">
+                      Play Again
+                    </button>
+                  </div>
+
+                  <div class="modal-note" id="saveNote" aria-live="polite"></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section">
+      <section class="categories" aria-label="Word categories">
         <div class="container">
-          <div class="section-head reveal">
-            <h2 class="section-title">Testimonials</h2>
-            <p class="section-subtitle">
-              Một vài phản hồi mock – đúng tinh thần: học nhanh, làm ngay, và tiến bộ rõ.
-            </p>
-          </div>
-
-          <div class="grid grid--3 testimonials">
-            <article class="testimonial-card reveal">
-              <div class="testimonial-card__top">
-                <div class="avatar avatar--blue" aria-hidden="true"></div>
-                <div>
-                  <div class="testimonial-card__name">Linh Anh</div>
-                  <div class="testimonial-card__role">Intern Ads • Tháng đầu</div>
-                </div>
-              </div>
-              <p class="testimonial-card__text">
-                Trước đây mình làm ads theo “thấy ổn” rồi thôi. Học xong phần reporting, mình biết cách chỉ ra
-                nguyên nhân và đề xuất tối ưu dựa trên số liệu.
-              </p>
-              <div class="testimonial-card__meta">Kết quả: dashboard rõ ràng • báo cáo dễ thuyết phục</div>
-            </article>
-
-            <article class="testimonial-card reveal">
-              <div class="testimonial-card__top">
-                <div class="avatar avatar--teal" aria-hidden="true"></div>
-                <div>
-                  <div class="testimonial-card__name">Minh Khang</div>
-                  <div class="testimonial-card__role">Fresher • Multi-channel</div>
-                </div>
-              </div>
-              <p class="testimonial-card__text">
-                Mình thích cách học có checklist. Từ kế hoạch đa kênh đến cách đo lường, mình áp dụng được
-                ngay vào project thực tập.
-              </p>
-              <div class="testimonial-card__meta">Kết quả: lên kế hoạch nhanh • phối hợp team tốt hơn</div>
-            </article>
-
-            <article class="testimonial-card reveal">
-              <div class="testimonial-card__top">
-                <div class="avatar avatar--blue2" aria-hidden="true"></div>
-                <div>
-                  <div class="testimonial-card__name">Thảo Vy</div>
-                  <div class="testimonial-card__role">Junior CS • Quy trình tối ưu</div>
-                </div>
-              </div>
-              <p class="testimonial-card__text">
-                Phần customer success giúp mình hiểu hành trình khách hàng sau mua. Mình biết thiết kế luồng
-                xử lý để tăng tỷ lệ quay lại và giảm khiếu nại.
-              </p>
-              <div class="testimonial-card__meta">Kết quả: quy trình chuẩn • tác động doanh thu rõ</div>
-            </article>
+          <h2 class="section-title section-title--small">Topics you&apos;ll master</h2>
+          <div class="badge-row">
+            <span class="pill-tag pill-green" role="img" aria-label="Digital Marketing">🌿 #Digital Marketing</span>
+            <span class="pill-tag pill-orange" role="img" aria-label="E-commerce">🧡 #E-commerce</span>
+            <span class="pill-tag pill-pink" role="img" aria-label="TikTok">🎵 #TikTok</span>
+            <span class="pill-tag pill-orange-red" role="img" aria-label="Shopee">🛍️ #Shopee</span>
+            <span class="pill-tag pill-blue" role="img" aria-label="Meta Ads">📣 #Meta</span>
           </div>
         </div>
       </section>
 
-      <section class="section section--cta">
-        <div class="hero__bg hero__bg--cta" aria-hidden="true">
-          <span class="blob blob--c"></span>
-          <span class="blob blob--d"></span>
-          <span class="grid-overlay grid-overlay--soft"></span>
-        </div>
-        <div class="container cta-band reveal">
-          <div>
-            <h2 class="cta-band__title">Sẵn sàng học theo lộ trình rõ ràng?</h2>
-            <p class="cta-band__subtitle">
-              Điền form để nhận gợi ý khóa phù hợp với mục tiêu của bạn. Không spam. Không backend.
-            </p>
-          </div>
-          <div class="cta-band__actions">
-            <a class="btn btn-primary cta-scroll" href="#lead-form" data-scroll-target="lead-form">
-              Đăng ký ngay
-            </a>
-            <a class="btn btn-ghost" href="courses.html">Tôi muốn xem lộ trình</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section lead-section" id="lead-form-section">
+      <section class="leaderboard" id="leaderboard" aria-label="Leaderboard">
         <div class="container">
-          <div class="lead-card reveal">
-            <div class="lead-card__head">
-              <h2 class="section-title">Đăng ký nhận tư vấn khóa học</h2>
-              <p class="section-subtitle">
-                Để lại thông tin, chúng tôi sẽ gợi ý lộ trình phù hợp (mock). Bạn có thể bắt đầu ngay sau khi đăng ký.
-              </p>
+          <div class="leaderboard-card">
+            <div class="leaderboard-head">
+              <div class="leaderboard-title">Leaderboard 🏅</div>
+              <div class="leaderboard-subtitle">Top 5 local scores on this device.</div>
             </div>
 
-            <form class="lead-form" id="lead-form" novalidate>
-              <div class="field">
-                <label for="lead-name">Họ & tên</label>
-                <input id="lead-name" name="name" type="text" autocomplete="name" required minlength="2" />
-                <div class="field-error" data-error-for="name" aria-live="polite"></div>
-              </div>
-
-              <div class="field">
-                <label for="lead-phone">Số điện thoại</label>
-                <input
-                  id="lead-phone"
-                  name="phone"
-                  type="tel"
-                  inputmode="tel"
-                  autocomplete="tel"
-                  required
-                  minlength="8"
-                />
-                <div class="field-error" data-error-for="phone" aria-live="polite"></div>
-              </div>
-
-              <div class="field">
-                <label for="lead-email">Email</label>
-                <input
-                  id="lead-email"
-                  name="email"
-                  type="email"
-                  autocomplete="email"
-                  required
-                />
-                <div class="field-error" data-error-for="email" aria-live="polite"></div>
-              </div>
-
-              <div class="lead-form__actions">
-                <button class="btn btn-primary" type="submit">Gửi đăng ký</button>
-                <p class="form-note">
-                  Bằng việc gửi, bạn đồng ý nhận tư vấn khóa học (demo). Thông tin không được lưu ra server.
-                </p>
-              </div>
-
-              <div class="form-success" role="status" aria-live="polite" hidden>
-                <span class="form-success__icon" aria-hidden="true"></span>
-                Cảm ơn bạn! Đăng ký thành công. Chúng tôi sẽ liên hệ trong thời gian sớm nhất (mock).
-              </div>
-            </form>
+            <div class="leaderboard-table-wrap" role="region" aria-label="Top scores table">
+              <table class="leaderboard-table">
+                <thead>
+                  <tr>
+                    <th>Rank 🥇🥈🥉</th>
+                    <th>Name</th>
+                    <th>Score</th>
+                    <th>Date</th>
+                  </tr>
+                </thead>
+                <tbody id="leaderboardBody">
+                  <tr>
+                    <td colspan="4" class="leaderboard-empty">Play once to set the leaderboard.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="container footer__inner">
-        <div class="footer__left">
-          <div class="brand brand--footer">
-            <span class="brand__mark" aria-hidden="true"></span>
-            <span class="brand__text">EcomGrowth</span>
+    <footer class="footer" aria-label="Footer">
+      <img
+        src="images/splash-pink.svg"
+        class="footer-splash splash-pink"
+        alt="Decorative pink splash"
+        role="img"
+        aria-label="Decorative pink splash"
+      />
+      <img
+        src="images/splash-green.svg"
+        class="footer-splash splash-green"
+        alt="Decorative green splash"
+        role="img"
+        aria-label="Decorative green splash"
+      />
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <div class="footer-tagline">Level up your marketing brain 🧠</div>
+          <div class="footer-links">
+            <a class="footer-link" href="#home" aria-label="Home link">Home</a>
+            <a class="footer-link" href="#game" aria-label="Play link">Play</a>
+            <a
+              class="footer-link"
+              href="https://github.com/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="GitHub link"
+            >
+              GitHub
+            </a>
           </div>
-          <div class="footer__small">Học marketing ecommerce với lộ trình rõ ràng và thực chiến.</div>
+          <div class="footer-copy">© <span id="yearNow"></span> BuzzWords. All rights reserved.</div>
         </div>
-        <div class="footer__right">
-          <a class="footer__link" href="courses.html">Khóa học</a>
-          <a class="footer__link" href="blog.html">Blog</a>
-          <a class="footer__link cta-scroll" href="#lead-form" data-scroll-target="lead-form">Đăng ký ngay</a>
+        <div class="footer-right" aria-hidden="true">
+          <div class="footer-mini">
+            <div class="footer-mini-item">Fast rounds</div>
+            <div class="footer-mini-item">Juicy hints</div>
+            <div class="footer-mini-item">Streak power</div>
+          </div>
         </div>
       </div>
     </footer>
 
-    <!-- Chat UI (UI only) -->
-    <div class="chat-widget" aria-label="Kết nối chat (demo)">
-      <div class="chat-panel" id="chat-panel" hidden>
-        <div class="chat-panel__head">
-          <div class="chat-panel__title">Tin nhắn nhanh</div>
-          <button class="chat-panel__close" id="chat-close" type="button" aria-label="Đóng">×</button>
-        </div>
-        <div class="chat-panel__body">
-          <div class="chat-chip">Tư vấn khóa phù hợp</div>
-          <div class="chat-chip chat-chip--alt">Báo học phí (demo)</div>
-          <div class="chat-chip chat-chip--alt">Giải đáp cho người mới</div>
-        </div>
-        <div class="chat-panel__foot">
-          <button class="btn btn-primary btn-sm" type="button" id="chat-cta">Bắt đầu trò chuyện</button>
-          <div class="chat-hint">UI demo: không gửi dữ liệu.</div>
-        </div>
-      </div>
-
-      <div class="chat-actions">
-        <button class="chat-btn chat-btn--mess" id="chat-messenger" type="button" aria-label="Messenger">
-          <span aria-hidden="true">M</span>
-        </button>
-        <button class="chat-btn chat-btn--zalo" id="chat-zalo" type="button" aria-label="Zalo">
-          <span aria-hidden="true">Z</span>
-        </button>
-      </div>
-    </div>
-
-    <script src="script.js" defer></script>
+    <script src="js/game.js"></script>
   </body>
 </html>
 
