@@ -1,41 +1,470 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
-<head>
-  <meta charset="UTF-8">
-  <title>Khoá học</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>Khóa học | Đăng ký ngay</title>
+    <meta
+      name="description"
+      content="Xem toàn bộ khóa học marketing ecommerce: nền tảng, ads theo từng kênh, báo cáo đa kênh, automation và AI."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Bỏ qua đến nội dung</a>
 
-<header>
-  <div class="logo">EcomAcademy</div>
-</header>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Trang chủ">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__text">EcomGrowth</span>
+        </a>
 
-<section class="courses">
-  <h1>Tất cả khoá học</h1>
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          type="button"
+          aria-label="Mở menu"
+          aria-controls="site-nav"
+          aria-expanded="false"
+        >
+          <span aria-hidden="true"></span>
+        </button>
 
-  <div class="grid">
+        <nav class="site-nav" id="site-nav" aria-label="Điều hướng chính">
+          <a class="site-nav__link" href="index.html">Trang chủ</a>
+          <a class="site-nav__link site-nav__link--active" href="courses.html">Khóa học</a>
+          <a class="site-nav__link" href="blog.html">Blog</a>
+          <a class="site-nav__cta cta-scroll" href="#lead-form" data-scroll-target="lead-form">
+            Đăng ký ngay
+          </a>
+        </nav>
+      </div>
+    </header>
 
-    <div class="card">
-      <img src="https://source.unsplash.com/400x300/?ads">
-      <h3>Basic Google Ads</h3>
-      <button onclick="location.href='index.html#form'">Đăng ký</button>
+    <main id="main">
+      <section class="page-hero">
+        <div class="page-hero__bg" aria-hidden="true">
+          <span class="blob blob--a"></span>
+          <span class="blob blob--b"></span>
+          <span class="grid-overlay"></span>
+        </div>
+
+        <div class="container page-hero__inner reveal">
+          <div class="page-hero__left">
+            <div class="pill pill--small">
+              <span class="pill__dot" aria-hidden="true"></span>
+              Khóa học marketing ecommerce
+            </div>
+            <h1 class="page-hero__title">Chọn khóa theo mục tiêu của bạn</h1>
+            <p class="page-hero__subtitle">
+              Không chỉ học lý thuyết. Mỗi khóa đều có checklist triển khai, bài tập thực hành và hướng dẫn cách
+              đo lường để bạn tối ưu từng bước.
+            </p>
+            <div class="page-hero__actions">
+              <a class="btn btn-primary cta-scroll" href="#lead-form" data-scroll-target="lead-form">
+                Đăng ký ngay
+              </a>
+              <a class="btn btn-ghost" href="blog.html">Xem bài viết gợi ý</a>
+            </div>
+          </div>
+
+          <div class="page-hero__right">
+            <div class="kpi-stack">
+              <div class="kpi-stack__item">
+                <div class="kpi-stack__num">4–8</div>
+                <div class="kpi-stack__label">tuần/track (mock)</div>
+              </div>
+              <div class="kpi-stack__item">
+                <div class="kpi-stack__num">12</div>
+                <div class="kpi-stack__label">khóa sẵn sàng bắt đầu</div>
+              </div>
+              <div class="kpi-stack__item">
+                <div class="kpi-stack__num">100%</div>
+                <div class="kpi-stack__label">bài tập thực chiến</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tight">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 class="section-title">Danh sách khóa học</h2>
+            <p class="section-subtitle">
+              Mỗi thẻ khóa học có CTA “Đăng ký ngay” để bạn được gợi ý lộ trình phù hợp.
+            </p>
+          </div>
+
+          <div class="grid grid--3 courses-grid">
+            <article class="course-card course-card--list reveal">
+              <div class="course-card__media">
+                <img
+                  src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1200&q=80"
+                  alt="Digital Marketing Foundation"
+                  loading="lazy"
+                />
+                <span class="course-card__glow" aria-hidden="true"></span>
+              </div>
+              <div class="course-card__content">
+                <h3 class="course-card__title">Digital Marketing Foundation</h3>
+                <p class="course-card__desc">
+                  Nền tảng phễu, kênh và cách đặt mục tiêu. Bạn sẽ biết đọc chỉ số và xây kế hoạch theo dữ liệu.
+                </p>
+                <a class="btn btn-primary btn-sm cta-scroll" href="#lead-form" data-scroll-target="lead-form">
+                  Đăng ký ngay
+                </a>
+              </div>
+            </article>
+
+            <article class="course-card course-card--list reveal">
+              <div class="course-card__media">
+                <img
+                  src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=80"
+                  alt="Ecommerce Foundation"
+                  loading="lazy"
+                />
+                <span class="course-card__glow" aria-hidden="true"></span>
+              </div>
+              <div class="course-card__content">
+                <h3 class="course-card__title">Ecommerce Foundation</h3>
+                <p class="course-card__desc">
+                  Hiểu vòng lặp mua lại, funnel ecommerce và cách tối ưu từ traffic đến conversion để tăng doanh thu.
+                </p>
+                <a class="btn btn-primary btn-sm cta-scroll" href="#lead-form" data-scroll-target="lead-form">
+                  Đăng ký ngay
+                </a>
+              </div>
+            </article>
+
+            <article class="course-card course-card--list reveal">
+              <div class="course-card__media">
+                <img
+                  src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1200&q=80"
+                  alt="Basic AI Adoption for Ads"
+                  loading="lazy"
+                />
+                <span class="course-card__glow" aria-hidden="true"></span>
+              </div>
+              <div class="course-card__content">
+                <h3 class="course-card__title">Basic AI Adoption for Ads</h3>
+                <p class="course-card__desc">
+                  Dùng AI để tạo biến thể nội dung, gợi ý angle và đo lường để tối ưu thử nghiệm nhanh nhưng không lệch.
+                </p>
+                <a class="btn btn-primary btn-sm cta-scroll" href="#lead-form" data-scroll-target="lead-form">
+                  Đăng ký ngay
+                </a>
+              </div>
+            </article>
+
+            <article class="course-card course-card--list reveal">
+              <div class="course-card__media">
+                <img
+                  src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=80"
+                  alt="Optimized Customer Success Process"
+                  loading="lazy"
+                />
+                <span class="course-card__glow" aria-hidden="true"></span>
+              </div>
+              <div class="course-card__content">
+                <h3 class="course-card__title">Optimized Customer Success Process</h3>
+                <p class="course-card__desc">
+                  Chuẩn hóa CS sau mua: phân khúc, điểm chạm, playbook xử lý và quy trình tối ưu tỷ lệ quay lại.
+                </p>
+                <a class="btn btn-primary btn-sm cta-scroll" href="#lead-form" data-scroll-target="lead-form">
+                  Đăng ký ngay
+                </a>
+              </div>
+            </article>
+
+            <article class="course-card course-card--list reveal">
+              <div class="course-card__media">
+                <img
+                  src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=1200&q=80"
+                  alt="Multi-channel Ads Planning & Reporting"
+                  loading="lazy"
+                />
+                <span class="course-card__glow" aria-hidden="true"></span>
+              </div>
+              <div class="course-card__content">
+                <h3 class="course-card__title">Multi-channel Ads Planning & Reporting</h3>
+                <p class="course-card__desc">
+                  Lập kế hoạch đa kênh theo mục tiêu và dựng báo cáo. Bạn biết cách kết luận “nên làm gì tiếp theo”.
+                </p>
+                <a class="btn btn-primary btn-sm cta-scroll" href="#lead-form" data-scroll-target="lead-form">
+                  Đăng ký ngay
+                </a>
+              </div>
+            </article>
+
+            <article class="course-card course-card--list reveal">
+              <div class="course-card__media">
+                <img
+                  src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80"
+                  alt="Automation Tool for Optimizing Ads"
+                  loading="lazy"
+                />
+                <span class="course-card__glow" aria-hidden="true"></span>
+              </div>
+              <div class="course-card__content">
+                <h3 class="course-card__title">Automation Tool for Optimizing Ads</h3>
+                <p class="course-card__desc">
+                  Thiết kế quy tắc tối ưu, cảnh báo hiệu suất và workflow thử nghiệm. Giảm thao tác thủ công nhưng tăng tốc.
+                </p>
+                <a class="btn btn-primary btn-sm cta-scroll" href="#lead-form" data-scroll-target="lead-form">
+                  Đăng ký ngay
+                </a>
+              </div>
+            </article>
+
+            <article class="course-card course-card--list reveal">
+              <div class="course-card__media">
+                <img
+                  src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80"
+                  alt="Basic of Google Ads"
+                  loading="lazy"
+                />
+                <span class="course-card__glow" aria-hidden="true"></span>
+              </div>
+              <div class="course-card__content">
+                <h3 class="course-card__title">Basic of Google Ads</h3>
+                <p class="course-card__desc">
+                  Cấu trúc tài khoản, chiến lược bidding và tối ưu theo mục tiêu chuyển đổi (không lan man).
+                </p>
+                <a class="btn btn-primary btn-sm cta-scroll" href="#lead-form" data-scroll-target="lead-form">
+                  Đăng ký ngay
+                </a>
+              </div>
+            </article>
+
+            <article class="course-card course-card--list reveal">
+              <div class="course-card__media">
+                <img
+                  src="https://images.unsplash.com/photo-1559136555-9303baea7f5b?auto=format&fit=crop&w=1200&q=80"
+                  alt="Basic of Meta Ads"
+                  loading="lazy"
+                />
+                <span class="course-card__glow" aria-hidden="true"></span>
+              </div>
+              <div class="course-card__content">
+                <h3 class="course-card__title">Basic of Meta Ads</h3>
+                <p class="course-card__desc">
+                  Setup campaign, tối ưu creative, phân bổ ngân sách theo giai đoạn learning và đo lường hiệu quả.
+                </p>
+                <a class="btn btn-primary btn-sm cta-scroll" href="#lead-form" data-scroll-target="lead-form">
+                  Đăng ký ngay
+                </a>
+              </div>
+            </article>
+
+            <article class="course-card course-card--list reveal">
+              <div class="course-card__media">
+                <img
+                  src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1200&q=80"
+                  alt="Basic of TikTok Ads"
+                  loading="lazy"
+                />
+                <span class="course-card__glow" aria-hidden="true"></span>
+              </div>
+              <div class="course-card__content">
+                <h3 class="course-card__title">Basic of TikTok Ads</h3>
+                <p class="course-card__desc">
+                  Tư duy nội dung + setup ads. Bạn học cách test hook, tối ưu theo tín hiệu hành vi và mục tiêu.
+                </p>
+                <a class="btn btn-primary btn-sm cta-scroll" href="#lead-form" data-scroll-target="lead-form">
+                  Đăng ký ngay
+                </a>
+              </div>
+            </article>
+
+            <article class="course-card course-card--list reveal">
+              <div class="course-card__media">
+                <img
+                  src="https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&w=1200&q=80"
+                  alt="Basic of Shopee Ads"
+                  loading="lazy"
+                />
+                <span class="course-card__glow" aria-hidden="true"></span>
+              </div>
+              <div class="course-card__content">
+                <h3 class="course-card__title">Basic of Shopee Ads</h3>
+                <p class="course-card__desc">
+                  Tối ưu danh mục, keyword và chiến lược giá. Hướng dẫn bạn đọc dữ liệu để ra quyết định rõ ràng.
+                </p>
+                <a class="btn btn-primary btn-sm cta-scroll" href="#lead-form" data-scroll-target="lead-form">
+                  Đăng ký ngay
+                </a>
+              </div>
+            </article>
+
+            <article class="course-card course-card--list reveal">
+              <div class="course-card__media">
+                <img
+                  src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80"
+                  alt="Threads Master 101"
+                  loading="lazy"
+                />
+                <span class="course-card__glow" aria-hidden="true"></span>
+              </div>
+              <div class="course-card__content">
+                <h3 class="course-card__title">Threads Master 101</h3>
+                <p class="course-card__desc">
+                  Xây nội dung & tương tác theo cấu trúc. Bạn học cách ra bài đúng nhịp và tạo hiệu ứng kéo traffic.
+                </p>
+                <a class="btn btn-primary btn-sm cta-scroll" href="#lead-form" data-scroll-target="lead-form">
+                  Đăng ký ngay
+                </a>
+              </div>
+            </article>
+
+            <article class="course-card course-card--list reveal">
+              <div class="course-card__media">
+                <img
+                  src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&q=80"
+                  alt="Marketing Campaign Strategy"
+                  loading="lazy"
+                />
+                <span class="course-card__glow" aria-hidden="true"></span>
+              </div>
+              <div class="course-card__content">
+                <h3 class="course-card__title">Marketing Campaign Strategy</h3>
+                <p class="course-card__desc">
+                  Từ insight đến kế hoạch chiến dịch: mục tiêu, thông điệp, lịch chạy và cách đo hiệu quả xuyên kênh.
+                </p>
+                <a class="btn btn-primary btn-sm cta-scroll" href="#lead-form" data-scroll-target="lead-form">
+                  Đăng ký ngay
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--cta">
+        <div class="container">
+          <div class="cta-panel reveal">
+            <div class="cta-panel__left">
+              <h2 class="cta-panel__title">Bạn đang phân vân chọn khóa nào?</h2>
+              <p class="cta-panel__subtitle">
+                Để lại thông tin. Chúng tôi sẽ gợi ý hướng đi phù hợp (mock) dựa trên mức độ hiện tại và mục tiêu nghề.
+              </p>
+            </div>
+            <div class="cta-panel__right">
+              <a class="btn btn-primary cta-scroll" href="#lead-form" data-scroll-target="lead-form">
+                Đăng ký ngay
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section lead-section" id="lead-form-page">
+        <div class="container">
+          <div class="lead-card reveal">
+            <div class="lead-card__head">
+              <h2 class="section-title">Đăng ký nhận tư vấn khóa học</h2>
+              <p class="section-subtitle">
+                Điền form để nhận gợi ý lộ trình phù hợp. Không backend, không spam.
+              </p>
+            </div>
+
+            <form class="lead-form" id="lead-form" novalidate>
+              <div class="field">
+                <label for="lead-name">Họ & tên</label>
+                <input id="lead-name" name="name" type="text" autocomplete="name" required minlength="2" />
+                <div class="field-error" data-error-for="name" aria-live="polite"></div>
+              </div>
+
+              <div class="field">
+                <label for="lead-phone">Số điện thoại</label>
+                <input
+                  id="lead-phone"
+                  name="phone"
+                  type="tel"
+                  inputmode="tel"
+                  autocomplete="tel"
+                  required
+                  minlength="8"
+                />
+                <div class="field-error" data-error-for="phone" aria-live="polite"></div>
+              </div>
+
+              <div class="field">
+                <label for="lead-email">Email</label>
+                <input
+                  id="lead-email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                />
+                <div class="field-error" data-error-for="email" aria-live="polite"></div>
+              </div>
+
+              <div class="lead-form__actions">
+                <button class="btn btn-primary" type="submit">Gửi đăng ký</button>
+                <p class="form-note">
+                  Bằng việc gửi, bạn đồng ý nhận tư vấn khóa học (demo). Thông tin không được lưu ra server.
+                </p>
+              </div>
+
+              <div class="form-success" role="status" aria-live="polite" hidden>
+                <span class="form-success__icon" aria-hidden="true"></span>
+                Cảm ơn bạn! Đăng ký thành công. Chúng tôi sẽ liên hệ trong thời gian sớm nhất (mock).
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <div class="brand brand--footer">
+            <span class="brand__mark" aria-hidden="true"></span>
+            <span class="brand__text">EcomGrowth</span>
+          </div>
+          <div class="footer__small">Học marketing ecommerce với lộ trình rõ ràng và thực chiến.</div>
+        </div>
+        <div class="footer__right">
+          <a class="footer__link" href="index.html">Trang chủ</a>
+          <a class="footer__link" href="blog.html">Blog</a>
+          <a class="footer__link cta-scroll" href="#lead-form" data-scroll-target="lead-form">Đăng ký ngay</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Chat UI (UI only) -->
+    <div class="chat-widget" aria-label="Kết nối chat (demo)">
+      <div class="chat-panel" id="chat-panel" hidden>
+        <div class="chat-panel__head">
+          <div class="chat-panel__title">Tin nhắn nhanh</div>
+          <button class="chat-panel__close" id="chat-close" type="button" aria-label="Đóng">×</button>
+        </div>
+        <div class="chat-panel__body">
+          <div class="chat-chip">Tư vấn khóa phù hợp</div>
+          <div class="chat-chip chat-chip--alt">Gợi ý lộ trình (mock)</div>
+          <div class="chat-chip chat-chip--alt">Trả lời nhanh</div>
+        </div>
+        <div class="chat-panel__foot">
+          <button class="btn btn-primary btn-sm" type="button" id="chat-cta">Bắt đầu trò chuyện</button>
+          <div class="chat-hint">UI demo: không gửi dữ liệu.</div>
+        </div>
+      </div>
+
+      <div class="chat-actions">
+        <button class="chat-btn chat-btn--mess" id="chat-messenger" type="button" aria-label="Messenger">
+          <span aria-hidden="true">M</span>
+        </button>
+        <button class="chat-btn chat-btn--zalo" id="chat-zalo" type="button" aria-label="Zalo">
+          <span aria-hidden="true">Z</span>
+        </button>
+      </div>
     </div>
 
-    <div class="card">
-      <img src="https://source.unsplash.com/400x300/?facebook">
-      <h3>Meta Ads</h3>
-      <button onclick="location.href='index.html#form'">Đăng ký</button>
-    </div>
-
-    <div class="card">
-      <img src="https://source.unsplash.com/400x300/?tiktok">
-      <h3>TikTok Ads</h3>
-      <button onclick="location.href='index.html#form'">Đăng ký</button>
-    </div>
-
-  </div>
-</section>
-
-</body>
+    <script src="script.js" defer></script>
+  </body>
 </html>
